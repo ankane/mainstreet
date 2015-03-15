@@ -2,11 +2,7 @@ require_relative "test_helper"
 
 class TestMainstreet < Minitest::Test
   def test_basic
-    address =
-      VCR.use_cassette("basic") do
-        Address.create(street: "1 infinite loop", zip_code: "95014")
-      end
-
+    address = create_address("basic", "1 infinite loop", "95014")
     assert_equal "1 Infinite Loop", address.street
     assert_nil address.street2
     assert_equal "Cupertino", address.city
@@ -19,21 +15,21 @@ class TestMainstreet < Minitest::Test
   end
 
   def test_bad_address
-    address =
-      VCR.use_cassette("bad_address") do
-        Address.create(street: "123 tyrannosaurus st", zip_code: "10000")
-      end
-
+    address = create_address("bad_address", "123 tyrannosaurus st", "10000")
     assert_equal ["Address could not be confirmed"], address.errors.full_messages
   end
 
   def test_bad_zip_code
-    address =
-      VCR.use_cassette("bad_zip_code") do
-        Address.create(street: "1 infinite loop", zip_code: "95015")
-      end
-
+    address = create_address("bad_zip_code", "1 infinite loop", "95015")
     assert_equal ["Did you mean 95014?"], address.errors.full_messages
     assert_equal "1 infinite loop", address.street
+  end
+
+  protected
+
+  def create_address(test, street, zip_code)
+    VCR.use_cassette(test) do
+      Address.create(street: street, zip_code: zip_code)
+    end
   end
 end
