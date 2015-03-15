@@ -26,19 +26,19 @@ class TestMainstreet < Minitest::Test
   end
 
   def test_blank_street
-    address = create_address("blank", nil, nil)
+    address = create_address("blank_street", nil, nil)
     assert_equal ["Street can't be blank"], address.errors.full_messages
   end
 
   def test_blank_zip_code
-    address = create_address("blank", "123 main st", nil)
+    address = create_address("blank_zip_code", "123 main st", nil)
     assert_equal ["Address can't be confirmed"], address.errors.full_messages
   end
 
   protected
 
-  def create_address(test, street, zip_code)
-    VCR.use_cassette(test) do
+  def create_address(label, street, zip_code)
+    VCR.use_cassette(label) do
       Address.create(street: street, zip_code: zip_code)
     end
   end
