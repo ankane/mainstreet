@@ -4,9 +4,9 @@ A standard US address model for Rails
 
 You get:
 
-- geocoding
-- standardization
 - verification
+- standardization
+- geocoding
 
 ## How It Works
 
@@ -27,7 +27,7 @@ This creates an address with:
 
 ### Verification
 
-ZIP code verification is performed by default.
+By default, MainStreet performs ZIP code verification.
 
 ```ruby
 address = Address.new(street:"1 infinite loop", zip_code: "95015")
@@ -37,7 +37,7 @@ address.errors.full_messages
 # ["Did you mean 95014?"]
 ```
 
-For full verification, including unit number, [see here](#full-verification).
+For full verification, including unit number, [see below](#full-verification).
 
 ## Installation
 
@@ -62,18 +62,18 @@ This creates an `Address` model with:
 - zip_code
 - latitude
 - longitude
-- verification_info
 - original_attributes
+- verification_info
 
 To add to an existing model:
 
 1. Use `alias_attribute` to map existing field names
-2. Add new fields like `verification_info` and `original_attributes`
+2. Add new fields like `original_attributes` and `verification_info`
 3. Add `acts_as_address` to your model
 
 ## Full Verification
 
-For full verification, sign up for a [SmartyStreets](https://smartystreets.com/features) account. The free plan supports 250 lookups per month.
+[SmartyStreets](https://smartystreets.com/features) is required for full verification. The free plan supports 250 lookups per month.
 
 Set:
 
