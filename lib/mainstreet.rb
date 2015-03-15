@@ -25,7 +25,7 @@ module Mainstreet
         before_save :standardize_address, if: -> { address_fields_changed? }
 
         def verify_address
-          @verification_result = Geocoder.search("#{street} #{street2} #{city}, #{state} #{zip_code}", lookup: Mainstreet.lookup).first
+          @verification_result = fetch_verification_info
           if @verification_result
             if @verification_result.respond_to?(:analysis)
               case @verification_result.analysis["dpv_match_code"]
@@ -68,6 +68,10 @@ module Mainstreet
             self.longitude = result.longitude
           end
           true
+        end
+
+        def fetch_verification_info
+          Geocoder.search("#{street} #{street2} #{city}, #{state} #{zip_code}", lookup: Mainstreet.lookup).first
         end
 
         def address_fields_changed?

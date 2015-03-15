@@ -10,19 +10,34 @@ You get:
 
 ## How It Works
 
-[todo]
+```ruby
+Address.create!(street: "1 infinite loop", zip_code: "95014")
+```
+
+This creates an address with:
+
+- street - `1 Infinite Loop`
+- city - `Cupertino`
+- state - `CA`
+- zip_code - `95014`
+- latitude - `37.33053`
+- longitude - `-122.02887`
+- original_attributes - `{"street"=>"1 infinite loop", "street2"=>nil, "city"=>nil, "state"=>nil, "zip_code"=>"95014"}`
+- verification_info
 
 ### Verification
 
-MainStreet performs ZIP code verification by default.
+ZIP code verification is performed by default.
 
 ```ruby
-address = Address.new(street: "400 bryant st", zip_code: "94108")
+address = Address.new(street:"1 infinite loop", zip_code: "95015")
 address.valid?
 # false
 address.errors.full_messages
-# ["Did you mean 94107?"]
+# ["Did you mean 95014?"]
 ```
+
+For full verification, including unit number, [see here](#Full-Verification).
 
 ## Installation
 
@@ -56,11 +71,9 @@ To add to an existing model:
 2. Add new fields like `verification_info` and `original_attributes`
 3. Add `acts_as_address` to your model
 
-## Address Verification
+## Full Verification
 
-MainStreet does ZIP code verification by default.
-
-For complete address verification, sign up for a [SmartyStreets](https://smartystreets.com/features) account. The free plan supports 250 lookups per month.
+For full verification, sign up for a [SmartyStreets](https://smartystreets.com/features) account. The free plan supports 250 lookups per month.
 
 Set:
 
@@ -73,7 +86,8 @@ To test it, run:
 
 ```ruby
 address = Address.new(street: "122 Mast Rd", zip_code: "03861")
-address.valid? # should get false
+address.valid?
+# should get false
 ```
 
 ## Contributing
