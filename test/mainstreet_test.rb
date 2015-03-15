@@ -18,6 +18,15 @@ class TestMainstreet < Minitest::Test
     assert address.verification_info
   end
 
+  def test_bad_address
+    address =
+      VCR.use_cassette("bad_address") do
+        Address.create(street: "123 tyrannosaurus st", zip_code: "10000")
+      end
+
+    assert_equal ["Address could not be confirmed"], address.errors.full_messages
+  end
+
   def test_bad_zip_code
     address =
       VCR.use_cassette("bad_zip_code") do
