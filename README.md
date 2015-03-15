@@ -37,7 +37,7 @@ address.errors.full_messages
 # ["Did you mean 95014?"]
 ```
 
-For full verification, including unit number, [see here](#Full-Verification).
+For full verification, including unit number, [see here](#full-verification).
 
 ## Installation
 
