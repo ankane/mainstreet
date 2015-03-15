@@ -21,29 +21,35 @@ module Mainstreet
         serialize :original_attributes
         serialize :verification_info
 
+        validates :street, presence: true
         validate :verify_address, if: -> { address_fields_changed? }
         before_save :standardize_address, if: -> { address_fields_changed? }
 
         def verify_address
-          @verification_result = fetch_verification_info
-          if @verification_result
-            if @verification_result.respond_to?(:analysis)
-              case @verification_result.analysis["dpv_match_code"]
-              when "N"
-                errors.add(:base, "Address could not be confirmed")
-              when "S"
-                errors.add(:base, "Apartment or suite could not be confirmed")
-              when "D"
-                errors.add(:base, "Apartment or suite is missing")
+          if zip_code.blank? && (city.blank? || state.blank?)
+            errors.add(:base, "Address can't be confirmed")
+          end
+          if errors.empty?
+            @verification_result = fetch_verification_info
+            if @verification_result
+              if @verification_result.respond_to?(:analysis)
+                case @verification_result.analysis["dpv_match_code"]
+                when "N"
+                  errors.add(:base, "Address can't be confirmed")
+                when "S"
+                  errors.add(:base, "Apartment or suite can't be confirmed")
+                when "D"
+                  errors.add(:base, "Apartment or suite is missing")
+                end
               end
-            end
 
-            correct_zip_code = @verification_result.postal_code
-            if zip_code != correct_zip_code
-              errors.add(:base, "Did you mean #{correct_zip_code}?")
+              correct_zip_code = @verification_result.postal_code
+              if zip_code != correct_zip_code
+                errors.add(:base, "Did you mean #{correct_zip_code}?")
+              end
+            else
+              errors.add(:base, "Address can't be confirmed")
             end
-          else
-            errors.add(:base, "Address could not be confirmed")
           end
           errors.full_messages
         end

@@ -16,13 +16,23 @@ class TestMainstreet < Minitest::Test
 
   def test_bad_address
     address = create_address("bad_address", "123 tyrannosaurus st", "10000")
-    assert_equal ["Address could not be confirmed"], address.errors.full_messages
+    assert_equal ["Address can't be confirmed"], address.errors.full_messages
   end
 
   def test_bad_zip_code
     address = create_address("bad_zip_code", "1 infinite loop", "95015")
     assert_equal ["Did you mean 95014?"], address.errors.full_messages
     assert_equal "1 infinite loop", address.street
+  end
+
+  def test_blank_street
+    address = create_address("blank", nil, nil)
+    assert_equal ["Street can't be blank"], address.errors.full_messages
+  end
+
+  def test_blank_zip_code
+    address = create_address("blank", "123 main st", nil)
+    assert_equal ["Address can't be confirmed"], address.errors.full_messages
   end
 
   protected
