@@ -15,7 +15,7 @@ class TestMainstreet < Minitest::Test
   end
 
   def test_bad_address
-    address = create_address("bad_address", "123 tyrannosaurus st", "10000")
+    address = create_address("bad_address", "123 fake tyrannosaurus st", "10000")
     assert_equal ["Address can't be confirmed"], address.errors.full_messages
   end
 
