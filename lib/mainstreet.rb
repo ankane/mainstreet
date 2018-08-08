@@ -57,7 +57,6 @@ module Mainstreet
         def standardize_address
           result = @verification_result
           if result
-            info = result.data
             self.original_attributes = attributes.slice(*address_fields)
             self.verification_info = result.data.to_hash
             self.street =
