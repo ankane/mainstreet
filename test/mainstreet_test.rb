@@ -6,7 +6,7 @@ class TestMainstreet < Minitest::Test
     assert_equal "1 Infinite Loop", address.street
     assert_nil address.street2
     assert_equal "Cupertino", address.city
-    assert_equal "CA", address.state
+    assert_equal "California", address.state
     assert_equal "95014", address.zip_code
     assert_in_delta 37.33053, address.latitude, 0.002
     assert_in_delta -122.02887, address.longitude, 0.002
@@ -21,7 +21,7 @@ class TestMainstreet < Minitest::Test
 
   def test_bad_zip_code
     address = create_address("bad_zip_code", "1 infinite loop", "95015")
-    assert_equal ["Did you mean 95014?"], address.errors.full_messages
+    assert_equal ["Address can't be confirmed"], address.errors.full_messages
     assert_equal "1 infinite loop", address.street
   end
 

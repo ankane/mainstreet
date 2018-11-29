@@ -34,7 +34,7 @@ address = Address.new(street:"1 infinite loop", zip_code: "95015")
 address.valid?
 # false
 address.errors.full_messages
-# ["Did you mean 95014?"]
+# ["Address can't be confirmed"]
 ```
 
 For full verification, including unit number, [see below](#full-verification).

@@ -62,8 +62,12 @@ module Mainstreet
             self.street =
               if result.respond_to?(:delivery_line_1)
                 result.delivery_line_1
-              else
+              elsif result.respond_to?(:formatted_address)
                 result.formatted_address.split(",").first
+              elsif result.respond_to?(:display_name)
+                "#{result.house_number} #{result.street}"
+              else
+                raise "Unknown geocoding result"
               end
             self.street2 = nil
             self.city = result.city
