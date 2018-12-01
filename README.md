@@ -106,7 +106,7 @@ For Active Record, use:
 
 ```ruby
 class User < ApplicationRecord
-  validates_address country: "France"
+  validates_address country: "France", ...
 end
 ```
 
@@ -114,7 +114,7 @@ Or use a proc to make it dynamic
 
 ```ruby
 class User < ApplicationRecord
-  validates_address country: -> { country }
+  validates_address country: -> { country }, ...
 end
 ```
 
