@@ -120,7 +120,7 @@ end
 
 ## Data Privacy
 
-We recommend encrypting the street information for user addresses. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.
+We recommend encrypting street information (at the very least) for user addresses. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.
 
 ```ruby
 class User < ApplicationRecord
