@@ -4,28 +4,38 @@ Bundler.require(:default)
 require "minitest/autorun"
 require "minitest/pride"
 require "vcr"
+require "webmock"
 
-VCR.configure do |config|
-  config.cassette_library_dir = "test/fixtures/vcr_cassettes"
-  config.hook_into :webmock
+def smarty_streets?
+  !ENV["SMARTY_STREETS_AUTH_ID"].nil?
 end
+
+VCR.configure do |c|
+  c.hook_into :webmock
+  c.cassette_library_dir = "test/cassettes"
+  c.filter_sensitive_data("<auth-id>") { ENV["SMARTY_STREETS_AUTH_ID"] } if ENV["SMARTY_STREETS_AUTH_ID"]
+  c.filter_sensitive_data("<auth-token>") { ENV["SMARTY_STREETS_AUTH_TOKEN"] } if ENV["SMARTY_STREETS_AUTH_TOKEN"]
+end
+
+cassette_name = smarty_streets? ? "smarty_streets" : "default"
+VCR.insert_cassette(cassette_name, record: :once)
+Minitest.after_run { VCR.eject_cassette }
 
 # migrations
 ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
 
 ActiveRecord::Migration.create_table :addresses do |t|
   t.text :street
-  t.text :street2
   t.text :city
-  t.string :state
-  t.string :zip_code
+  t.string :region
+  t.string :postal_code
+  t.string :country
   t.decimal :latitude
   t.decimal :longitude
-  t.text :original_attributes
-  t.text :verification_info
-  t.timestamps null: false
 end
 
 class Address < ActiveRecord::Base
-  acts_as_address
+  validates_address fields: [:street, :city, :region, :postal_code],
+    geocode: true,
+    country: -> { country }
 end

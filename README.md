@@ -1,43 +1,8 @@
 # MainStreet
 
-A standard US address model for Rails
+Address verification for Ruby and Rails
 
-You get:
-
-- verification
-- standardization
-- geocoding
-
-## How It Works
-
-```ruby
-Address.create!(street: "1 infinite loop", zip_code: "95014")
-```
-
-This creates an address with:
-
-- street - `1 Infinite Loop`
-- city - `Cupertino`
-- state - `CA`
-- zip_code - `95014`
-- latitude - `37.33053`
-- longitude - `-122.02887`
-- original_attributes - `{"street"=>"1 infinite loop", "street2"=>nil, "city"=>nil, "state"=>nil, "zip_code"=>"95014"}`
-- verification_info
-
-### Verification
-
-By default, MainStreet performs ZIP code verification.
-
-```ruby
-address = Address.new(street:"1 infinite loop", zip_code: "95015")
-address.valid?
-# false
-address.errors.full_messages
-# ["Address can't be confirmed"]
-```
-
-For full verification, including unit number, [see below](#full-verification).
+:earth_americas: Supports international addresses
 
 ## Installation
 
@@ -47,48 +12,131 @@ Add this line to your application’s Gemfile:
 gem 'mainstreet'
 ```
 
-To create a new address model, run:
-
-```sh
-rails g mainstreet:address
-```
-
-This creates an `Address` model with:
-
-- street
-- street2
-- city
-- state
-- zip_code
-- latitude
-- longitude
-- original_attributes
-- verification_info
-
-To add to an existing model:
-
-1. Use `alias_attribute` to map existing field names
-2. Add new fields like `original_attributes` and `verification_info`
-3. Add `acts_as_address` to your model
-
 ## Full Verification
 
-[SmartyStreets](https://smartystreets.com/features) is required for full verification. The free plan supports 250 lookups per month.
-
-Set:
+By default, bad street numbers, units, and postal codes may pass verification. For full verification, get an account with [SmartyStreets](https://smartystreets.com). The free plan supports 250 lookups per month for US addresses, and plans for international addresses start at $7. To use it, set:
 
 ```ruby
 ENV["SMARTY_STREETS_AUTH_ID"] = "auth-id"
 ENV["SMARTY_STREETS_AUTH_TOKEN"] = "auth-token"
 ```
 
-To test it, run:
+## How to Use
+
+Check an address with:
 
 ```ruby
-address = Address.new(street: "122 Mast Rd", zip_code: "03861")
-address.valid?
-# should get false
+address = "1600 Pennsylvania Ave NW, Washington DC 20500"
+verifier = MainStreet::AddressVerifier.new(address)
+verifier.success?
 ```
+
+If verification fails, get the failure message with:
+
+```ruby
+verifier.failure_message
+```
+
+Get details about the result with:
+
+```ruby
+verifier.result
+```
+
+Get the latitude and longitude with:
+
+```ruby
+verifier.latitude
+verifier.longitude
+```
+
+## Active Record
+
+For Active Record models, use:
+
+```ruby
+class User < ApplicationRecord
+  validates_address fields: [:street, :street2, :city, :state, :postal_code]
+end
+```
+
+For performance, the address is only verified if at least one of the fields changes. The order should be the same as if you were to write the address out.
+
+Geocode the address with:
+
+```ruby
+class User < ApplicationRecord
+  validates_address geocode: true, ...
+end
+```
+
+The `latitude` and `longitude` fields are used by default. Specify the fields with:
+
+```ruby
+class User < ApplicationRecord
+  validates_address geocode: {latitude: :lat, longitude: :lon}, ...
+end
+```
+
+Empty addresses are not verified. To require an address, add your own validation.
+
+```ruby
+class User < ApplicationRecord
+  validates :street, presence: true
+end
+```
+
+## SmartyStreets
+
+With SmartyStreets, you must pass the country for non-US addresses.
+
+```ruby
+MainStreet::AddressVerifier.new(address, country: "France")
+```
+
+Here’s the list of [supported countries](https://smartystreets.com/docs/cloud/international-street-api#countries). You can pass the name, ISO-3, ISO-2, or ISO-N code (like `France`, `FRA`, `FR`, or `250`).
+
+**Note:** You’ll also need to use a fork of Geocoder until [this PR](https://github.com/alexreisner/geocoder/pull/1367) is merged.
+
+```ruby
+gem 'geocoder', github: 'ankane/geocoder', branch: 'smarty_streets_international'
+```
+
+For Active Record, use:
+
+```ruby
+class User < ApplicationRecord
+  validates_address country: "France"
+end
+```
+
+Or use a proc to make it dynamic
+
+```ruby
+class User < ApplicationRecord
+  validates_address country: -> { country }
+end
+```
+
+## Data Privacy
+
+We recommend encrypting the street information for user addresses. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.
+
+```ruby
+class User < ApplicationRecord
+  attr_encrypted :street, key: ...
+end
+```
+
+## Upgrading
+
+### 0.2.0
+
+See the [upgrade guide](docs/0-2-Upgrade.md)
+
+## History
+
+View the [changelog](https://github.com/ankane/mainstreet/blob/master/CHANGELOG.md)
 
 ## Contributing
 

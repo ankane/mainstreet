@@ -1,6 +1,8 @@
 ## 0.2.0 [unreleased]
 
-- Fixed error with default geocoder provider
+- Added `AddressVerifier`
+- Added `validates_address` method
+- Removed `acts_as_address` method
 
 ## 0.1.0
 

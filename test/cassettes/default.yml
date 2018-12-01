@@ -1,0 +1,782 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1600%20Fake%20Ave,%20Washington,%20DC,%2020500
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:08:56 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:08:56 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1600%20Fake%20Ave,%20Washington,%20DC,%2020500
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:08:56 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:08:57 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1600%20Fake%20Ave,%20Washington,%20DC,%2020500
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:08:57 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:08:57 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1600%20Fake%20Ave,%20Washington,%20DC,%2020500
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:08:58 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:08:58 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1600%20Fake%20Ave,%20Washington,%20DC,%2020500
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:08:59 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:08:59 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=13%20Rue%20Yves%20Toudic,%20Paris,%2075010
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:08:59 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOiI4NzE0NjgyIiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczpcL1wvb3NtLm9yZ1wvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoiOTEyMjcwNzQ1IiwiYm91bmRpbmdib3giOlsiNDguODcwMDc5NSIsIjQ4Ljg3MDE3OTUiLCIyLjM2MzQ0MTMiLCIyLjM2MzU0MTMiXSwibGF0IjoiNDguODcwMTI5NSIsImxvbiI6IjIuMzYzNDkxMyIsImRpc3BsYXlfbmFtZSI6IjEzLCBSdWUgWXZlcyBUb3VkaWMsIFBvcnRlLVN0LU1hcnRpbiwgMTB0aCBBcnJvbmRpc3NlbWVudCwgUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIDc1MDEwLCBGcmFuY2UiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6ImhvdXNlIiwiaW1wb3J0YW5jZSI6MC42MzA5OTk5OTk5OTk5OTk5LCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjEzIiwicm9hZCI6IlJ1ZSBZdmVzIFRvdWRpYyIsInN1YnVyYiI6IlBvcnRlLVN0LU1hcnRpbiIsImNpdHlfZGlzdHJpY3QiOiIxMHRoIEFycm9uZGlzc2VtZW50IiwiY2l0eSI6IlBhcmlzIiwiY291bnR5IjoiUGFyaXMiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwicG9zdGNvZGUiOiI3NTAxMCIsImNvdW50cnlfY29kZSI6ImZyIn19XQ==
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:00 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Infinite%20Loop,%20Cupertino,%20CA,%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:00 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOiIxNjAzNTAwOCIsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6XC9cL29zbS5vcmdcL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6IjE0Mjk0Nzc1MDQiLCJib3VuZGluZ2JveCI6WyIzNy4zMzEzNTUiLCIzNy4zMzE0NTUiLCItMTIyLjAzMDQ2ODUiLCItMTIyLjAzMDM2ODUiXSwibGF0IjoiMzcuMzMxNDA1IiwibG9uIjoiLTEyMi4wMzA0MTg1IiwiZGlzcGxheV9uYW1lIjoiQXBwbGUgSW5maW5pdGUgTG9vcCwgMSwgSW5maW5pdGUgTG9vcCwgQXBwbGUsIEluYy4sIEN1cGVydGlubywgU2FudGEgQ2xhcmEgQ291bnR5LCBDYWxpZm9ybmlhLCA5NTAxNCwgVVNBIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImVsZWN0cm9uaWNzIiwiaW1wb3J0YW5jZSI6MC42MzA5OTk5OTk5OTk5OTk5LCJhZGRyZXNzIjp7ImVsZWN0cm9uaWNzIjoiQXBwbGUgSW5maW5pdGUgTG9vcCIsImhvdXNlX251bWJlciI6IjEiLCJyb2FkIjoiSW5maW5pdGUgTG9vcCIsImNvbW1lcmNpYWwiOiJBcHBsZSwgSW5jLiIsImNpdHkiOiJDdXBlcnRpbm8iLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVTQSIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOiIxMDExNTI5NzIiLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOlwvXC9vc20ub3JnXC9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6IjExNDA1NDgyOSIsImJvdW5kaW5nYm94IjpbIjM3LjMzMTE5NTciLCIzNy4zMzIxNjQ5IiwiLTEyMi4wMzA1NTQzIiwiLTEyMi4wMjk3OTY0Il0sImxhdCI6IjM3LjMzMTY3NCIsImxvbiI6Ii0xMjIuMDMwMDg0ODA3ODIxIiwiZGlzcGxheV9uYW1lIjoiSW5maW5pdGUgTG9vcCAxLCAxLCBJbmZpbml0ZSBMb29wLCBBcHBsZSwgSW5jLiwgQ3VwZXJ0aW5vLCBTYW50YSBDbGFyYSBDb3VudHksIENhbGlmb3JuaWEsIDk1MDE0LCBVU0EiLCJjbGFzcyI6ImJ1aWxkaW5nIiwidHlwZSI6InllcyIsImltcG9ydGFuY2UiOjAuNjMwOTk5OTk5OTk5OTk5OSwiYWRkcmVzcyI6eyJidWlsZGluZyI6IkluZmluaXRlIExvb3AgMSIsImhvdXNlX251bWJlciI6IjEiLCJyb2FkIjoiSW5maW5pdGUgTG9vcCIsImNvbW1lcmNpYWwiOiJBcHBsZSwgSW5jLiIsImNpdHkiOiJDdXBlcnRpbm8iLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVTQSIsImNvdW50cnlfY29kZSI6InVzIn19XQ==
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:00 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=122%20Mast%20Rd,%20Lee,%20NH%2003861
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:01 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOiIxMDgxNDM1NDEiLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOlwvXC9vc20ub3JnXC9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6IjE0MjU0NjMwOCIsImJvdW5kaW5nYm94IjpbIjQzLjEzNTk2NSIsIjQzLjEzNjIxODUiLCItNzAuOTg2NDEwNyIsIi03MC45ODU1MTM2Il0sImxhdCI6IjQzLjEzNjEwMTIiLCJsb24iOiItNzAuOTg1ODM2ODM5NDgxMiIsImRpc3BsYXlfbmFtZSI6IjEyMiwgTWFzdCBSb2FkLCBMZWUsIFN0cmFmZm9yZCBDb3VudHksIE5ldyBIYW1wc2hpcmUsIDAzODYxLCBVU0EiLCJjbGFzcyI6ImJ1aWxkaW5nIiwidHlwZSI6InllcyIsImltcG9ydGFuY2UiOjAuNTMwOTk5OTk5OTk5OTk5OSwiYWRkcmVzcyI6eyJob3VzZV9udW1iZXIiOiIxMjIiLCJyb2FkIjoiTWFzdCBSb2FkIiwidmlsbGFnZSI6IkxlZSIsImNvdW50eSI6IlN0cmFmZm9yZCBDb3VudHkiLCJzdGF0ZSI6Ik5ldyBIYW1wc2hpcmUiLCJwb3N0Y29kZSI6IjAzODYxIiwiY291bnRyeSI6IlVTQSIsImNvdW50cnlfY29kZSI6InVzIn19XQ==
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:01 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=13%20Rue%20Yves%20Toudic,%20Paris%2075010
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:02 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOiI4NzE0NjgyIiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczpcL1wvb3NtLm9yZ1wvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoiOTEyMjcwNzQ1IiwiYm91bmRpbmdib3giOlsiNDguODcwMDc5NSIsIjQ4Ljg3MDE3OTUiLCIyLjM2MzQ0MTMiLCIyLjM2MzU0MTMiXSwibGF0IjoiNDguODcwMTI5NSIsImxvbiI6IjIuMzYzNDkxMyIsImRpc3BsYXlfbmFtZSI6IjEzLCBSdWUgWXZlcyBUb3VkaWMsIFBvcnRlLVN0LU1hcnRpbiwgMTB0aCBBcnJvbmRpc3NlbWVudCwgUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIDc1MDEwLCBGcmFuY2UiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6ImhvdXNlIiwiaW1wb3J0YW5jZSI6MC42MzA5OTk5OTk5OTk5OTk5LCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjEzIiwicm9hZCI6IlJ1ZSBZdmVzIFRvdWRpYyIsInN1YnVyYiI6IlBvcnRlLVN0LU1hcnRpbiIsImNpdHlfZGlzdHJpY3QiOiIxMHRoIEFycm9uZGlzc2VtZW50IiwiY2l0eSI6IlBhcmlzIiwiY291bnR5IjoiUGFyaXMiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwicG9zdGNvZGUiOiI3NTAxMCIsImNvdW50cnlfY29kZSI6ImZyIn19XQ==
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:02 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Infinite%20Loop,%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:02 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOiIxNjAzNTAwOCIsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6XC9cL29zbS5vcmdcL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6IjE0Mjk0Nzc1MDQiLCJib3VuZGluZ2JveCI6WyIzNy4zMzEzNTUiLCIzNy4zMzE0NTUiLCItMTIyLjAzMDQ2ODUiLCItMTIyLjAzMDM2ODUiXSwibGF0IjoiMzcuMzMxNDA1IiwibG9uIjoiLTEyMi4wMzA0MTg1IiwiZGlzcGxheV9uYW1lIjoiQXBwbGUgSW5maW5pdGUgTG9vcCwgMSwgSW5maW5pdGUgTG9vcCwgQXBwbGUsIEluYy4sIEN1cGVydGlubywgU2FudGEgQ2xhcmEgQ291bnR5LCBDYWxpZm9ybmlhLCA5NTAxNCwgVVNBIiwiY2xhc3MiOiJzaG9wIiwidHlwZSI6ImVsZWN0cm9uaWNzIiwiaW1wb3J0YW5jZSI6MC42MzA5OTk5OTk5OTk5OTk5LCJhZGRyZXNzIjp7ImVsZWN0cm9uaWNzIjoiQXBwbGUgSW5maW5pdGUgTG9vcCIsImhvdXNlX251bWJlciI6IjEiLCJyb2FkIjoiSW5maW5pdGUgTG9vcCIsImNvbW1lcmNpYWwiOiJBcHBsZSwgSW5jLiIsImNpdHkiOiJDdXBlcnRpbm8iLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVTQSIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOiIxMDExNTI5NzIiLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOlwvXC9vc20ub3JnXC9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6IjExNDA1NDgyOSIsImJvdW5kaW5nYm94IjpbIjM3LjMzMTE5NTciLCIzNy4zMzIxNjQ5IiwiLTEyMi4wMzA1NTQzIiwiLTEyMi4wMjk3OTY0Il0sImxhdCI6IjM3LjMzMTY3NCIsImxvbiI6Ii0xMjIuMDMwMDg0ODA3ODIxIiwiZGlzcGxheV9uYW1lIjoiSW5maW5pdGUgTG9vcCAxLCAxLCBJbmZpbml0ZSBMb29wLCBBcHBsZSwgSW5jLiwgQ3VwZXJ0aW5vLCBTYW50YSBDbGFyYSBDb3VudHksIENhbGlmb3JuaWEsIDk1MDE0LCBVU0EiLCJjbGFzcyI6ImJ1aWxkaW5nIiwidHlwZSI6InllcyIsImltcG9ydGFuY2UiOjAuNjMwOTk5OTk5OTk5OTk5OSwiYWRkcmVzcyI6eyJidWlsZGluZyI6IkluZmluaXRlIExvb3AgMSIsImhvdXNlX251bWJlciI6IjEiLCJyb2FkIjoiSW5maW5pdGUgTG9vcCIsImNvbW1lcmNpYWwiOiJBcHBsZSwgSW5jLiIsImNpdHkiOiJDdXBlcnRpbm8iLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVTQSIsImNvdW50cnlfY29kZSI6InVzIn19XQ==
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:03 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Fake%20Loop,%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:04 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:04 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Fake%20Loop,%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:04 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:04 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Fake%20Loop,%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:05 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:05 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Fake%20Loop,%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:06 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:06 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Fake%20Loop,%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:07 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:07 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Fake%20Loop,%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:07 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:08 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=99%20Fictitious%20St,%20Westminster,%20London%20SW1A%202AA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:08 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:08 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=99%20Fictitious%20St,%20Westminster,%20London%20SW1A%202AA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Dec 2018 01:09:09 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=0, report-uri="https://openstreetmap.report-uri.com/r/d/ct/reportOnly"
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 01:09:09 GMT
+recorded_with: VCR 4.0.0
