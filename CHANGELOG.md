@@ -1,3 +1,7 @@
+## 0.2.1 [unreleased]
+
+- Specified minimum Geocoder version
+
 ## 0.2.0
 
 - Added `AddressVerifier`

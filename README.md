@@ -96,11 +96,7 @@ MainStreet::AddressVerifier.new(address, country: "France")
 
 Here’s the list of [supported countries](https://smartystreets.com/docs/cloud/international-street-api#countries). You can pass the name, ISO-3, ISO-2, or ISO-N code (like `France`, `FRA`, `FR`, or `250`).
 
-**Note:** You’ll also need to use the master branch of Geocoder until its next release.
-
-```ruby
-gem 'geocoder', github: 'alexreisner/geocoder'
-```
+**Note:** This requires Geocoder 1.5.1 or greater.
 
 For Active Record, use:
 
