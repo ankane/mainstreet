@@ -114,7 +114,7 @@ class User < ApplicationRecord
 end
 ```
 
-## Data Privacy
+## Data Protection
 
 We recommend encrypting street information and postal code (at the very least) for user addresses. [Lockbox](https://github.com/ankane/lockbox) is great for this. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.
 
