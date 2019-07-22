@@ -116,12 +116,11 @@ end
 
 ## Data Privacy
 
-We recommend encrypting street information and postal code (at the very least) for user addresses. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.
+We recommend encrypting street information and postal code (at the very least) for user addresses. [Lockbox](https://github.com/ankane/lockbox) is great for this. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.
 
 ```ruby
 class User < ApplicationRecord
-  attr_encrypted :street, key: ...
-  attr_encrypted :postal_code, key: ...
+  encrypts :street, :postal_code
 end
 ```
 
