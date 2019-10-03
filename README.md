@@ -78,6 +78,14 @@ class User < ApplicationRecord
 end
 ```
 
+You can custom the validation error message with:
+
+```ruby
+class User < ApplicationRecord
+  validates :street, message: 'Looks like this address is not valid!'
+end
+```
+
 Empty addresses are not verified. To require an address, add your own validation.
 
 ```ruby
