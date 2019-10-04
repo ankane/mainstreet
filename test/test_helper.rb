@@ -10,6 +10,8 @@ def smarty_streets?
   !ENV["SMARTY_STREETS_AUTH_ID"].nil?
 end
 
+I18n.load_path << Dir[File.expand_path("locales", __dir__) + "/*.yml"]
+
 VCR.configure do |c|
   c.hook_into :webmock
   c.cassette_library_dir = "test/cassettes"

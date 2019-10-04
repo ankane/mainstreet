@@ -44,4 +44,10 @@ class AddressVerifierTest < Minitest::Test
     verifier = MainStreet::AddressVerifier.new(address, country: "GBR")
     assert !verifier.success?
   end
+
+  def test_i18n
+    address = "1 Fake Loop, Cupertino, CA 95014"
+    verifier = MainStreet::AddressVerifier.new(address, locale: :fr)
+    assert_equal "Cette adresse n’est pas reconnue", verifier.failure_message
+  end
 end

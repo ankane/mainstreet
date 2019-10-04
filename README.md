@@ -122,6 +122,20 @@ class User < ApplicationRecord
 end
 ```
 
+## Internationalization (i18n) [master]
+
+You can customize error messages with the [i18n](https://github.com/ruby-i18n/i18n) gem. In Rails, add to the appropriate `config/locales` file:
+
+```yml
+en:
+  mainstreet:
+    errors:
+      messages:
+        unconfirmed: Address can't be confirmed
+        apt_unconfirmed: Apartment or suite can't be confirmed
+        apt_missing: Apartment or suite is missing
+```
+
 ## Data Protection
 
 We recommend encrypting street information and postal code (at the very least) for user addresses. [Lockbox](https://github.com/ankane/lockbox) is great for this. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.

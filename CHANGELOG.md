@@ -1,5 +1,6 @@
 ## 0.2.1 [unreleased]
 
+- Added support for i18n
 - Added support for more validation options like `if` and `on`
 - Specified minimum Geocoder version
 
