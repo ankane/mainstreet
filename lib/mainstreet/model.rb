@@ -1,12 +1,13 @@
 module MainStreet
   module Model
-    def validates_address(fields:, geocode: false, country: nil)
+    def validates_address(fields:, geocode: false, country: nil, **options)
       fields = Array(fields.map(&:to_s))
       geocode_options = {latitude: :latitude, longitude: :longitude}
       geocode_options = geocode_options.merge(geocode) if geocode.is_a?(Hash)
+      options[:if] ||= -> { fields.any? { |f| changes.key?(f.to_s) } }
 
       class_eval do
-        validate :verify_address, if: -> { fields.any? { |f| changes.key?(f.to_s) } }
+        validate :verify_address, **options
 
         define_method :verify_address do
           address = fields.map { |v| send(v).presence }.compact.join(", ")
