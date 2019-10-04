@@ -60,7 +60,15 @@ class User < ApplicationRecord
 end
 ```
 
-For performance, the address is only verified if at least one of the fields changes. The order should be the same as if you were to write the address out.
+The order should be the same as if you were to write the address out.
+
+For performance, the address is only verified if at least one of the fields changes. Set your own condition with: [master]
+
+```ruby
+class User < ApplicationRecord
+  validates_address if: -> { something_changed? }, ...
+end
+```
 
 Geocode the address with:
 
