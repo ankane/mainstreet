@@ -64,7 +64,7 @@ end
 
 The order should be the same as if you were to write the address out.
 
-For performance, the address is only verified if at least one of the fields changes. Set your own condition with: [master]
+For performance, the address is only verified if at least one of the fields changes. Set your own condition with:
 
 ```ruby
 class User < ApplicationRecord
@@ -106,8 +106,6 @@ MainStreet::AddressVerifier.new(address, country: "France")
 
 Here’s the list of [supported countries](https://smartystreets.com/docs/cloud/international-street-api#countries). You can pass the name, ISO-3, ISO-2, or ISO-N code (like `France`, `FRA`, `FR`, or `250`).
 
-**Note:** This requires Geocoder 1.5.1 or greater.
-
 For Active Record, use:
 
 ```ruby
@@ -124,7 +122,7 @@ class User < ApplicationRecord
 end
 ```
 
-## Internationalization (i18n) [master]
+## Internationalization (i18n)
 
 You can customize error messages with the [i18n](https://github.com/ruby-i18n/i18n) gem. In Rails, add to the appropriate `config/locales` file:
 

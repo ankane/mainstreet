@@ -1,4 +1,4 @@
-## 0.2.1 [unreleased]
+## 0.2.1
 
 - Added support for i18n
 - Added support for more validation options like `if` and `on`
