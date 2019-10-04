@@ -4,7 +4,7 @@ module MainStreet
       fields = Array(fields.map(&:to_s))
       geocode_options = {latitude: :latitude, longitude: :longitude}
       geocode_options = geocode_options.merge(geocode) if geocode.is_a?(Hash)
-      options[:if] ||= -> { fields.any? { |f| changes.key?(f.to_s) } }
+      options[:if] ||= -> { fields.any? { |f| changes.key?(f.to_s) } } unless options[:unless]
 
       class_eval do
         validate :verify_address, **options
