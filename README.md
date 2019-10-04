@@ -4,6 +4,8 @@ Address verification for Ruby and Rails
 
 :earth_americas: Supports international addresses
 
+[![Build Status](https://travis-ci.org/ankane/mainstreet.svg?branch=master)](https://travis-ci.org/ankane/mainstreet)
+
 ## Installation
 
 Add this line to your application’s Gemfile:
