@@ -1,6 +1,6 @@
 ## 0.2.2 [unreleased]
 
-- Fixed bug with Smarty Streets and ZIP code only addresses
+- Fixed bug with SmartyStreets and ZIP code only addresses
 
 ## 0.2.1
 
