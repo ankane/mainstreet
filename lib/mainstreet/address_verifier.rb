@@ -46,7 +46,11 @@ module MainStreet
       @result ||= begin
         options = {lookup: lookup}
         options[:country] = @country if @country && !usa?
-        Geocoder.search(@address, options).first
+        # don't use smarty streets zipcode only API
+        # keep mirrored with geocoder gem, including \Z
+        if @address.to_s.strip !~ /\A\d{5}(-\d{4})?\Z/
+          Geocoder.search(@address, options).first
+        end
       end
     end
 

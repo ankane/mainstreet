@@ -1,3 +1,7 @@
+## 0.2.2 [unreleased]
+
+- Fixed bug with Smarty Streets and ZIP code only addresses
+
 ## 0.2.1
 
 - Added support for i18n
