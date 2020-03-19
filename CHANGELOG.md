@@ -1,4 +1,4 @@
-## 0.2.2 [unreleased]
+## 0.2.2 (unreleased)
 
 - Fixed bug with SmartyStreets and ZIP code only addresses
 
