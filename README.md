@@ -4,7 +4,7 @@ Address verification for Ruby and Rails
 
 :earth_americas: Supports international addresses
 
-[![Build Status](https://travis-ci.org/ankane/mainstreet.svg?branch=master)](https://travis-ci.org/ankane/mainstreet)
+[![Build Status](https://github.com/ankane/mainstreet/workflows/build/badge.svg?branch=master)](https://github.com/ankane/mainstreet/actions)
 
 ## Installation
 
