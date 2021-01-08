@@ -23,6 +23,9 @@ cassette_name = smarty_streets? ? "smarty_streets" : "default"
 VCR.insert_cassette(cassette_name, record: :once)
 Minitest.after_run { VCR.eject_cassette }
 
+ActiveRecord::Base.logger = ActiveSupport::Logger.new(ENV["VERBOSE"] ? STDOUT : nil)
+ActiveRecord::Migration.verbose = ENV["VERBOSE"]
+
 # migrations
 ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
 
