@@ -14,7 +14,9 @@ Add this line to your application’s Gemfile:
 gem 'mainstreet'
 ```
 
-## Full Verification
+## How It Works
+
+MainStreet uses [Geocoder](https://github.com/alexreisner/geocoder) for address verification, which has a number of [3rd party services](https://github.com/alexreisner/geocoder/blob/master/README_API_GUIDE.md#global-street-address-lookups) you can use. If you adhere to GDPR, be sure to add the service to your subprocessor list.
 
 By default, bad street numbers, units, and postal codes may pass verification. For full verification, get an account with [SmartyStreets](https://smartystreets.com). The free plan supports 250 lookups per month for US addresses, and plans for international addresses start at $7. To use it, set:
 
