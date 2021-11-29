@@ -70,7 +70,7 @@ module MainStreet
     end
 
     def lookup
-      ENV["SMARTY_STREETS_AUTH_ID"] ? :smarty_streets : nil
+      Geocoder.config_for_lookup(:smarty_streets).fetch(:api_key) ? :smarty_streets : nil
     end
 
     def message(key, default)
