@@ -70,7 +70,8 @@ module MainStreet
     end
 
     def lookup
-      ENV["SMARTY_STREETS_AUTH_ID"] ? :smarty_streets : nil
+      return nil unless ENV["SMARTY_STREETS_AUTH_ID"]
+      { api_key: [ENV['SMARTY_STREETS_AUTH_ID'], ENV['SMARTY_STREETS_AUTH_TOKEN']] }
     end
 
     def message(key, default)
