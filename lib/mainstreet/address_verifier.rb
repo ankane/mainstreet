@@ -4,7 +4,6 @@ module MainStreet
       @address = address
       @country = country
       @locale = locale
-      @searched = false
     end
 
     def success?
@@ -44,7 +43,7 @@ module MainStreet
     end
 
     def result
-      return @result if @searched
+      return @result if defined?(@result)
 
       @result = begin
         options = {lookup: lookup}
@@ -53,7 +52,6 @@ module MainStreet
         # keep mirrored with geocoder gem, including \Z
         # \Z is the same as \z when strip is used
         if @address.to_s.strip !~ /\A\d{5}(-\d{4})?\Z/
-          @searched = true
           Geocoder.search(@address, options).first
         end
       end
