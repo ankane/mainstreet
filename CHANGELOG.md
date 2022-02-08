@@ -1,3 +1,7 @@
+## 0.2.3 (unreleased)
+
+- Fixed duplicate API calls for invalid addresses
+
 ## 0.2.2 (2020-04-16)
 
 - Fixed bug with SmartyStreets and ZIP code only addresses
