@@ -1,5 +1,6 @@
 ## 0.2.3 (unreleased)
 
+- Added `lookup` option
 - Fixed duplicate API calls for invalid addresses
 
 ## 0.2.2 (2020-04-16)

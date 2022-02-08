@@ -5,6 +5,16 @@ require "geocoder"
 require "mainstreet/address_verifier"
 require "mainstreet/version"
 
+module MainStreet
+  class << self
+    attr_writer :lookup
+
+    def lookup
+      @lookup ||= ENV["SMARTY_STREETS_AUTH_ID"] ? :smarty_streets : nil
+    end
+  end
+end
+
 if ENV["SMARTY_STREETS_AUTH_ID"]
   Geocoder.config[:smarty_streets] ||= {
     api_key: [

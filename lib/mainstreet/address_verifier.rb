@@ -46,7 +46,7 @@ module MainStreet
       return @result if defined?(@result)
 
       @result = begin
-        options = {lookup: lookup}
+        options = {lookup: MainStreet.lookup}
         options[:country] = @country if @country && !usa?
         # don't use smarty streets zipcode only API
         # keep mirrored with geocoder gem, including \Z
@@ -69,10 +69,6 @@ module MainStreet
 
     def usa?
       ["United States", "USA", "US", "840"].include?(@country.to_s)
-    end
-
-    def lookup
-      ENV["SMARTY_STREETS_AUTH_ID"] ? :smarty_streets : nil
     end
 
     def message(key, default)
