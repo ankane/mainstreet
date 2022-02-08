@@ -1,4 +1,4 @@
-## 0.2.3 (unreleased)
+## 0.2.3 (2022-02-08)
 
 - Added `lookup` option
 - Fixed duplicate API calls for invalid addresses
