@@ -11,7 +11,7 @@ Address verification for Ruby and Rails
 Add this line to your application’s Gemfile:
 
 ```ruby
-gem 'mainstreet'
+gem "mainstreet"
 ```
 
 ## How It Works
