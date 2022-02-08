@@ -43,7 +43,9 @@ module MainStreet
     end
 
     def result
-      @result ||= begin
+      return @result if defined?(@result)
+
+      @result = begin
         options = {lookup: lookup}
         options[:country] = @country if @country && !usa?
         # don't use smarty streets zipcode only API
