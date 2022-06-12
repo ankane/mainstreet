@@ -144,7 +144,7 @@ We recommend encrypting street information and postal code (at the very least) f
 
 ```ruby
 class User < ApplicationRecord
-  encrypts :street, :postal_code
+  has_encrypted :street, :postal_code
 end
 ```
 
