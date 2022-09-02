@@ -1,3 +1,7 @@
+## 0.3.0 (unreleased)
+
+- Dropped support for Ruby < 2.7
+
 ## 0.2.3 (2022-02-08)
 
 - Added `lookup` option
