@@ -2,8 +2,8 @@
 require "geocoder"
 
 # modules
-require "mainstreet/address_verifier"
-require "mainstreet/version"
+require_relative "mainstreet/address_verifier"
+require_relative "mainstreet/version"
 
 module MainStreet
   class << self
@@ -26,7 +26,7 @@ end
 
 if defined?(ActiveSupport.on_load)
   ActiveSupport.on_load(:active_record) do
-    require "mainstreet/model"
+    require_relative "mainstreet/model"
     extend MainStreet::Model
   end
 end
