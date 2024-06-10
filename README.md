@@ -148,12 +148,6 @@ class User < ApplicationRecord
 end
 ```
 
-## Upgrading
-
-### 0.2.0
-
-See the [upgrade guide](docs/0-2-Upgrade.md)
-
 ## History
 
 View the [changelog](https://github.com/ankane/mainstreet/blob/master/CHANGELOG.md)
