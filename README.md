@@ -138,6 +138,14 @@ en:
         apt_missing: Apartment or suite is missing
 ```
 
+You can also request addresses in a specific language, e.g. "United States" is called "Verenigde Staten" in Dutch. Set the language to any ISO-639 language code.
+
+```ruby
+MainStreet::AddressVerifier.new(address, language: "nl")
+```
+
+As an alternative you can also set this in [Geocoder's config](https://github.com/alexreisner/geocoder/blob/master/lib/geocoder/configuration.rb).
+
 ## Data Protection
 
 We recommend encrypting street information and postal code (at the very least) for user addresses. [Lockbox](https://github.com/ankane/lockbox) is great for this. Check out [this article](https://ankane.org/sensitive-data-rails) for more details.

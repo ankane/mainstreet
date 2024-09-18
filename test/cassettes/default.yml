@@ -777,6 +777,40 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-    http_version: 
   recorded_at: Sat, 01 Dec 2018 01:09:09 GMT
-recorded_with: VCR 4.0.0
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=de&addressdetails=1&format=json&q=Cologne,%20Germany
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 18 Sep 2024 20:37:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '554'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjk5OTMxMzY3LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjYyNTc4LCJsYXQiOiI1MC45MzgzNjEiLCJsb24iOiI2Ljk1OTk3NCIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC43NDc5MTQzNDYyNDcxMzI1LCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiS8O2bG4iLCJkaXNwbGF5X25hbWUiOiJLw7ZsbiwgTm9yZHJoZWluLVdlc3RmYWxlbiwgRGV1dHNjaGxhbmQiLCJhZGRyZXNzIjp7ImNpdHkiOiJLw7ZsbiIsInN0YXRlIjoiTm9yZHJoZWluLVdlc3RmYWxlbiIsIklTTzMxNjYtMi1sdmw0IjoiREUtTlciLCJjb3VudHJ5IjoiRGV1dHNjaGxhbmQiLCJjb3VudHJ5X2NvZGUiOiJkZSJ9LCJib3VuZGluZ2JveCI6WyI1MC44MzA0Mzk5IiwiNTEuMDg0OTc0MyIsIjYuNzcyNTMwMyIsIjcuMTYyMDI4MCJdfV0=
+  recorded_at: Wed, 18 Sep 2024 20:37:21 GMT
+recorded_with: VCR 6.3.1

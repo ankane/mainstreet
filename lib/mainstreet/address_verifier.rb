@@ -1,9 +1,10 @@
 module MainStreet
   class AddressVerifier
-    def initialize(address, country: nil, locale: nil)
+    def initialize(address, country: nil, locale: nil, language: nil)
       @address = address
       @country = country
       @locale = locale
+      @language = language
     end
 
     def success?
@@ -48,6 +49,7 @@ module MainStreet
       @result = begin
         options = {lookup: MainStreet.lookup}
         options[:country] = @country if @country && !usa?
+        options[:language] = @language if @language
         # don't use smarty streets zipcode only API
         # keep mirrored with geocoder gem, including \Z
         # \Z is the same as \z when strip is used

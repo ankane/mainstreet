@@ -50,4 +50,12 @@ class AddressVerifierTest < Minitest::Test
     verifier = MainStreet::AddressVerifier.new(address, locale: :fr)
     assert_equal "Cette adresse n’est pas reconnue", verifier.failure_message
   end
+
+  def test_language_option
+    address = "Cologne, Germany"
+    verifier = MainStreet::AddressVerifier.new(address, language: :de)
+    assert verifier.success?
+    assert_equal "Köln", verifier.result.city
+    assert_equal "Deutschland", verifier.result.country
+  end
 end
