@@ -28,14 +28,16 @@ ActiveRecord::Migration.verbose = ENV["VERBOSE"]
 # migrations
 ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
 
-ActiveRecord::Migration.create_table :addresses do |t|
-  t.text :street
-  t.text :city
-  t.string :region
-  t.string :postal_code
-  t.string :country
-  t.decimal :latitude
-  t.decimal :longitude
+ActiveRecord::Schema.define do
+  create_table :addresses do |t|
+    t.text :street
+    t.text :city
+    t.string :region
+    t.string :postal_code
+    t.string :country
+    t.decimal :latitude
+    t.decimal :longitude
+  end
 end
 
 class Address < ActiveRecord::Base
