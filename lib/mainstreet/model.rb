@@ -10,7 +10,7 @@ module MainStreet
         validate :verify_address, **options
 
         define_method :verify_address do
-          address = fields.map { |v| send(v).presence }.compact.join(", ")
+          address = fields.filter_map { |v| send(v).presence }.join(", ")
 
           if address.present?
             # must use a different variable than country
